@@ -1,0 +1,50 @@
+.navigation {
+    grid-column: center-start / center-end;
+
+
+    &__form {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 2rem;
+    }
+
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nav {
+    
+
+    &__logo  {
+        width: 20rem;
+        margin-right: 5rem;
+    }
+
+    &__items {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        padding: 0 1rem;
+
+        &:last-child {
+            padding-right: 0;
+        }
+      
+    }
+
+    &__links {
+        font-family: inherit;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-blue;
+    }
+}
+

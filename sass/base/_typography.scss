@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+.heading {
+    text-transform: uppercase;
+    color: $color-blue;
+    font-weight: 600;
+
+    &__secondary {
+        font-size: 2rem;    
+    }
+
+    &__tertiary {
+        font-size: 1.6rem;
+    }
+}

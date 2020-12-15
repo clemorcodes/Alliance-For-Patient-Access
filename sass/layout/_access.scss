@@ -1,0 +1,59 @@
+.access {
+    grid-column: center-start / center-end;
+    transform: translateY(-50%);
+
+    &__barriers {
+        margin-top: 4rem;
+        background-color: $color-white;
+        
+        &--heading {
+            text-align: center;
+            padding: 5rem 0;
+        }
+    }
+}
+
+.barrier {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5rem;
+
+    &__items {
+        padding: 0 3rem;
+        display: grid;
+        grid-template-rows: repeat(2, min-content);
+        grid-template-columns:  repeat(5, 1fr) ;
+
+    }
+    &__item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        & img {
+            margin: auto;
+        }
+        
+    }
+
+    &__icon {
+        width: 5rem;
+        height: 5rem;
+        fill: $color-grey-light;
+    }
+
+    &__image {
+        width: 30%;
+        
+    }
+
+    &__name {
+        width: 100%;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+   
+}

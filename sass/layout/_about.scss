@@ -1,0 +1,19 @@
+.about {
+    grid-column: full-start / full-end;
+    background-color: $color-blue;
+    
+
+    &__text {
+        padding: 5rem 0 20rem 0;
+
+        &--details {
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            color: $color-white;
+            font-size: 2rem;
+        }
+    }
+
+}
+

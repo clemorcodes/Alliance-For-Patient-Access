@@ -1,0 +1,62 @@
+.sidebar {
+    grid-column: col-start 3 / center-end;
+    background-color: $color-white;
+    margin: -10rem 0 5rem 0;
+
+    &__heading {
+        color: $color-white;
+        background-color: $color-blue;
+        padding: 2rem 5rem;
+    }
+
+    &__policy {
+
+        &--papers {
+            padding: 3rem 5rem;
+        }
+
+
+    }
+
+    &__tweets {
+        padding: 0 5rem;
+
+        &--heading {
+            padding-bottom: 2rem;
+        }
+
+        &--link {
+            display: inline-block;
+            border-bottom: 1px solid $color-grey-border;
+            padding-bottom: 3rem;
+        }
+    }
+}
+
+//INDIVIDUAL POLICY
+
+.policy {
+    padding: 2rem 0;
+    border-bottom: 1px solid $color-grey-border;
+
+    &__links {
+        font-family: inherit;
+        font-size: inherit;
+        text-decoration: none;
+        color: $color-blue;
+    }
+
+    &__date {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        padding-top: 1rem;
+    }
+
+    &__summits {
+        padding: 5rem;
+
+        &--heading {
+            padding-bottom: 2rem;
+        }
+    }
+}
