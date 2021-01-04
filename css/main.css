@@ -24,6 +24,7 @@ body {
 }
 
 .container {
+  width: 100%;
   max-width: 144rem;
   margin: 0 auto;
   display: -ms-grid;
@@ -121,6 +122,12 @@ img {
 .about {
   grid-column: full-start / full-end;
   background-color: #282f5d;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .about {
+    padding-bottom: 10rem;
+  }
 }
 
 .about__text {
@@ -522,7 +529,7 @@ img {
 
 @media only screen and (max-width: 56.25em) {
   .header__text {
-    font-size: 5rem;
+    display: none;
   }
 }
 
