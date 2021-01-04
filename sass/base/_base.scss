@@ -39,9 +39,13 @@ body {
     repeat(3, [col-start] minmax(min-content, 35rem) [col-end]) [center-end] minmax(2rem,1fr) [full-end];
 
     @media only screen and (max-width: $bp-largest) {
+        padding: 0 2rem;
         grid-template-rows: repeat(6, min-content);
         grid-template-columns: [full-start]
         repeat(3, [col-start] minmax(min-content, 35rem) [col-end])  [full-end];
     }
 }
 
+img {
+    width: 100%;
+}

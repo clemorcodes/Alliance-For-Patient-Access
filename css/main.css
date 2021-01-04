@@ -38,6 +38,7 @@ body {
 
 @media only screen and (max-width: 68.75em) {
   .container {
+    padding: 0 2rem;
     -ms-grid-rows: (min-content)[6];
         grid-template-rows: repeat(6, -webkit-min-content);
         grid-template-rows: repeat(6, min-content);
@@ -45,6 +46,10 @@ body {
         grid-template-columns: [full-start] repeat(3, [col-start] minmax(-webkit-min-content, 35rem) [col-end]) [full-end];
         grid-template-columns: [full-start] repeat(3, [col-start] minmax(min-content, 35rem) [col-end]) [full-end];
   }
+}
+
+img {
+  width: 100%;
 }
 
 .heading {
@@ -261,6 +266,12 @@ body {
   padding: 5rem 0 5rem 0;
 }
 
+@media only screen and (max-width: 50em) {
+  .blog {
+    padding: 5rem 0 0 0;
+  }
+}
+
 .blog__heading {
   color: #ffffff;
   padding: 2rem 0;
@@ -294,6 +305,12 @@ body {
 
 .blog__item:not(:last-child) {
   padding-right: 5rem;
+}
+
+@media only screen and (max-width: 50em) {
+  .blog__item:not(:last-child) {
+    padding-right: 0;
+  }
 }
 
 .blog__item--image {
@@ -438,6 +455,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .mainHeader {
     margin-top: 2rem;
+    height: 50vh;
   }
 }
 
@@ -595,6 +613,7 @@ img {
 @media only screen and (max-width: 56.25em) {
   .new {
     margin: -20rem 0 5rem 0;
+    padding-right: 0;
   }
 }
 
@@ -617,6 +636,7 @@ img {
 
 @media only screen and (max-width: 43.75em) {
   .new__item {
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -629,6 +649,12 @@ img {
       -ms-flex: 1;
           flex: 1;
   padding-right: 2rem;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .new__image {
+    padding-right: 0;
+  }
 }
 
 .new__details {

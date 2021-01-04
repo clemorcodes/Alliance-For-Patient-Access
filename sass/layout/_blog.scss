@@ -8,6 +8,12 @@
     repeat(3, [col-start] minmax(min-content, 35rem) [col-end]) [blog-end] minmax(2rem,1fr) [main-end];
     padding: 5rem 0 5rem 0;
 
+    @media only screen and (max-width: $bp-small) {
+        padding: 5rem 0 0 0;
+    }
+
+   
+
     &__heading {
         color: $color-white;
         padding: 2rem 0;
@@ -26,15 +32,23 @@
 
     &__item {
         flex: 1;
+
+        
         
         &:not(:last-child) {
             padding-right: 5rem;
+
+            @media only screen and (max-width: $bp-small) {
+                padding-right: 0;
+            }
         }
 
         &--image {
             width: 100%;
             height: 50%;
             object-fit: cover;
+
+            
         }
 
         &--link {
