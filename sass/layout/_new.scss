@@ -8,6 +8,9 @@
         grid-column: full-start / full-end;
     }
 
+    @media only screen and (max-width: $bp-medium) {
+        margin: -20rem 0 5rem 0;
+    }
     &__item {
         width: 100%;
         display: flex;
@@ -19,6 +22,10 @@
         }
         &:first-child {
             margin-top: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            flex-direction: column;
         }
     }
 

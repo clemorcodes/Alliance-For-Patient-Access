@@ -10,6 +10,11 @@
     background-position: top;
     background-repeat: no-repeat;
 
+    @media only screen and (max-width: $bp-medium) {
+        margin-top: 2rem;
+    }
+    
+
 }
 
 .header {
@@ -27,17 +32,33 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media only screen and (max-width: $bp-small) {
+            justify-content: center;
+        }
     }
 
     &__icon {
         width: 4rem;
         height: 4rem;
         fill: $color-white;
+
+        @media only screen and (max-width: $bp-small) {
+            display: none;
+        }
     }
 
     &__text {
         color: $color-white;
         font-size: 8rem;
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 6rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 5rem;
+        }
     }
 }
 img {
