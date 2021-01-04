@@ -36,6 +36,18 @@ body {
       grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(3, [col-start] minmax(min-content, 35rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
 }
 
+@media only screen and (max-width: 68.75em) {
+  .container {
+    padding: 0 2rem;
+    -ms-grid-rows: (min-content)[6];
+        grid-template-rows: repeat(6, -webkit-min-content);
+        grid-template-rows: repeat(6, min-content);
+    -ms-grid-columns: [full-start] ([col-start] minmax(min-content, 35rem) [col-end])[3] [full-end];
+        grid-template-columns: [full-start] repeat(3, [col-start] minmax(-webkit-min-content, 35rem) [col-end]) [full-end];
+        grid-template-columns: [full-start] repeat(3, [col-start] minmax(min-content, 35rem) [col-end]) [full-end];
+  }
+}
+
 .heading {
   text-transform: uppercase;
   color: #282f5d;
@@ -125,6 +137,12 @@ body {
           transform: translateY(-50%);
 }
 
+@media only screen and (max-width: 68.75em) {
+  .access {
+    grid-column: full-start / full-end;
+  }
+}
+
 .access__barriers {
   margin-top: 4rem;
   background-color: #ffffff;
@@ -179,6 +197,14 @@ body {
   width: 5rem;
   height: 5rem;
   fill: #838384;
+}
+
+.barrier__icon--1 {
+  margin-left: 2rem;
+}
+
+.barrier__icon--2 {
+  margin-right: 2rem;
 }
 
 .barrier__image {
@@ -420,6 +446,12 @@ img {
   grid-column: center-start / center-end;
 }
 
+@media only screen and (max-width: 68.75em) {
+  .navigation {
+    grid-column: full-start / full-end;
+  }
+}
+
 .navigation__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -437,6 +469,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 68.75em) {
+  .nav {
+    display: none;
+  }
 }
 
 .nav__logo {
@@ -476,6 +514,12 @@ img {
   padding-right: 3rem;
   margin: -10rem 0 5rem 0;
   background-color: #f7f6f6;
+}
+
+@media only screen and (max-width: 68.75em) {
+  .new {
+    grid-column: full-start / full-end;
+  }
 }
 
 .new__item {
@@ -542,6 +586,12 @@ img {
   grid-column: col-start 3 / center-end;
   background-color: #ffffff;
   margin: -10rem 0 5rem 0;
+}
+
+@media only screen and (max-width: 68.75em) {
+  .sidebar {
+    grid-column: full-start / full-end;
+  }
 }
 
 .sidebar__heading {

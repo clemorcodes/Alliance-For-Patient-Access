@@ -4,6 +4,10 @@
     margin: -10rem 0 5rem 0;
     background-color: $color-grey-background;
 
+    @media only screen and (max-width: $bp-largest) {
+        grid-column: full-start / full-end;
+    }
+
     &__item {
         width: 100%;
         display: flex;

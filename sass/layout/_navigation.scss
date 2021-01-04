@@ -1,6 +1,10 @@
 .navigation {
     grid-column: center-start / center-end;
 
+    @media only screen and (max-width: $bp-largest) {
+        grid-column: full-start / full-end;
+    }
+
 
     &__form {
         display: flex;
@@ -16,6 +20,10 @@
 }
 
 .nav {
+
+    @media only screen and (max-width: $bp-largest) {
+        display: none;
+    }
     
 
     &__logo  {

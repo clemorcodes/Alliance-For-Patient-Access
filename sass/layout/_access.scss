@@ -2,6 +2,10 @@
     grid-column: center-start / center-end;
     transform: translateY(-50%);
 
+    @media only screen and (max-width: $bp-largest) {
+        grid-column: full-start / full-end;
+    }
+
     &__barriers {
         margin-top: 4rem;
         background-color: $color-white;
@@ -42,6 +46,14 @@
         width: 5rem;
         height: 5rem;
         fill: $color-grey-light;
+
+        &--1 {
+            margin-left: 2rem;
+        }
+
+        &--2 {
+            margin-right: 2rem;
+        }
     }
 
     &__image {
