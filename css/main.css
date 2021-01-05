@@ -147,7 +147,7 @@ img {
 
 @media only screen and (max-width: 62.5em) {
   .about__text--details {
-    width: 90%;
+    width: 100%;
   }
 }
 
