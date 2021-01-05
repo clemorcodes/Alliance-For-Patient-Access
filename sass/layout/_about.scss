@@ -2,13 +2,15 @@
     grid-column: full-start / full-end;
     background-color: $color-blue;
 
-    @media only screen and (max-width: $bp-medium) {
-        padding-bottom: 10rem;
-    }
-    
+
+   
 
     &__text {
         padding: 5rem 0 20rem 0;
+
+        @media only screen and (max-width: $bp-largest) {
+            padding-bottom: 5rem;
+        }
 
         &--details {
             width: 60%;

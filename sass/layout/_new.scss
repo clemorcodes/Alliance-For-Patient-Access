@@ -6,10 +6,14 @@
 
     @media only screen and (max-width: $bp-largest) {
         grid-column: full-start / full-end;
+        margin: 5rem 0 5rem 0;
     }
 
     @media only screen and (max-width: $bp-medium) {
-        margin: -20rem 0 5rem 0;
+        padding-right: 0;
+    }
+
+    @media only screen and (max-width: $bp-extra-small) {
         padding-right: 0;
     }
     &__item {

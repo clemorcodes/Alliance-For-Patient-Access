@@ -4,6 +4,7 @@
 
     @media only screen and (max-width: $bp-largest) {
         grid-column: full-start / full-end;
+        transform: none;
     }
 
     &__barriers {
@@ -40,6 +41,10 @@
 
         @media only screen and (max-width: $bp-smallest) {
             grid-template-columns:  repeat(2, 1fr) ;
+        }
+
+        @media only screen and (max-width: $bp-extra-small) {
+            grid-template-columns:  repeat(1, 1fr) ;
         }
 
        

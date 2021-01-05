@@ -10,7 +10,7 @@
     background-position: top;
     background-repeat: no-repeat;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-smallest) {
         margin-top: 2rem;
         height: 50vh;
     }
@@ -57,8 +57,8 @@
             font-size: 6rem;
         }
 
-        @media only screen and (max-width: $bp-medium) {
-            display: none;
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 3rem;
         }
     }
 }
