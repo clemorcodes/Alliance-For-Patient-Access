@@ -42,8 +42,11 @@ body {
 
     @media only screen and (max-width: $bp-largest) {
         padding: 0 2rem;
-        grid-template-rows: repeat(6, min-content);
-        
+        grid-template-rows: repeat(6, min-content);   
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 0 1rem;
     }
 
 
