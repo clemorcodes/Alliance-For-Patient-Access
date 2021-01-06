@@ -11,6 +11,14 @@
         justify-content: flex-end;
         margin-top: 2rem;
 
+        @media only screen and (max-width: $bp-medium) {
+            margin-bottom: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin-bottom: 0;
+        }
+
         @media only screen and (max-width: $bp-smallest) {
             display: block;
             width: 100%;
