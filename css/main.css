@@ -524,8 +524,8 @@ img {
       grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(3, [col-start] minmax(-webkit-min-content, 35rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
       grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(3, [col-start] minmax(min-content, 35rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
   height: 90vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2))), url("../../img/medic2.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2)), url("../../img/medic2.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("../../img/medic2.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3)), url("../../img/medic2.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
