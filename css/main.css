@@ -681,7 +681,8 @@ img {
 }
 
 .nav__item {
-  padding: 0 1rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .nav__item:last-child {
@@ -694,6 +695,13 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: #282f5d;
+}
+
+.nav__links:hover {
+  color: #ffffff;
+  -webkit-transform: cubic-bezier(0.26, 0.88, 0.44, 0.93);
+          transform: cubic-bezier(0.26, 0.88, 0.44, 0.93);
+  background-color: #282f5d;
 }
 
 .new {
